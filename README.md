@@ -16,3 +16,12 @@ https://www.google.com/search?biw=1440&bih=798&tbm=isch&sa=1&ei=D1DAXNr7AYaxUuOG
 
 5) Sinon on a toujours le sujet proposé sur Moodle: "L'île tropicale". On pourrait l'adapter pour faire une scène "L'île au trésor", inspirée du roman de Robert Louis Stevenson. (Très chaud pour ça). 
 
+
+Idee Adrien :
+
+1) Pièce d'une maison hantée, l'utilisateur peut se balader avec les flèches directionnelles et cliquer sur des objets pour provoquer des réactions. On peut imaginer qu'à l'ouverture d'une armoire un "monstre" se jette sur lui, que lorsqu'il marche sur une trappe les murs se resserrent sur lui ou bien que les lumières diminuent etc...
+
+Avantages : Fun et intéressant pour créer les monstres, les animations, les objets et l'éclairage
+.
+Inconvénients : Pas de modélisation procédurale à première vue mais idée : créer des monstres procéduraux ? (tentacules sur tentacules un peu comme le flocon de Koch ?)
+	      Pas vraiment de billboards à première vue mais idée : toiles d'araignées en billboards ?
