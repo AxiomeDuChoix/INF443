@@ -6,5 +6,5 @@ CXX_FLAGS =   -O2 -g -std=c++11 -Wall -Wextra
 
 CXX_DEFINES = -DGLFW_DLL -DIMGUI_IMPL_OPENGL_LOADER_GLAD
 
-CXX_INCLUDES = -I/home/adrien/Documents/Informatique/Mod3D/INF443/vcl/cmake/../src 
+CXX_INCLUDES = -I/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/cmake/../src 
 

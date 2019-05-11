@@ -1,4 +1,4 @@
-# Install script for directory: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/cmake
+# Install script for directory: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

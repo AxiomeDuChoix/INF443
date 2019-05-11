@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/3.7.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/3.7.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/g++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_55b8c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_55b8c.dir/build.make CMakeFiles/cmTC_55b8c.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_55b8c.dir/testCCompiler.c.o
-/usr/bin/gcc     -o CMakeFiles/cmTC_55b8c.dir/testCCompiler.c.o   -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_55b8c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55b8c.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_55b8c.dir/testCCompiler.c.o  -o cmTC_55b8c -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_55ea8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55ea8.dir/build.make CMakeFiles/cmTC_55ea8.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_55ea8.dir/testCCompiler.c.o
+/usr/bin/gcc     -o CMakeFiles/cmTC_55ea8.dir/testCCompiler.c.o   -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_55ea8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55ea8.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_55ea8.dir/testCCompiler.c.o  -o cmTC_55ea8 -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_14652/fast"
-/usr/bin/make -f CMakeFiles/cmTC_14652.dir/build.make CMakeFiles/cmTC_14652.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc     -o CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_14652
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14652.dir/link.txt --verbose=1
-/usr/bin/gcc      -v CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o  -o cmTC_14652 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_282b8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_282b8.dir/build.make CMakeFiles/cmTC_282b8.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc     -o CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_282b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_282b8.dir/link.txt --verbose=1
+/usr/bin/gcc      -v CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o  -o cmTC_282b8 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper
@@ -59,24 +59,24 @@ Thread model: posix
 gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_14652' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMJxzuw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_14652 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_14652' '-rdynamic' '-mtune=generic' '-march=x86-64'
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_282b8' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpcxOmV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_282b8 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_282b8' '-rdynamic' '-mtune=generic' '-march=x86-64'
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_14652/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_14652.dir/build.make CMakeFiles/cmTC_14652.dir/build]
-  ignore line: [make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »]
-  ignore line: [Building C object CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc     -o CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_14652]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14652.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc      -v CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o  -o cmTC_14652 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_282b8/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_282b8.dir/build.make CMakeFiles/cmTC_282b8.dir/build]
+  ignore line: [make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »]
+  ignore line: [Building C object CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc     -o CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_282b8]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_282b8.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc      -v CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o  -o cmTC_282b8 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_14652' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMJxzuw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_14652 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_282b8' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpcxOmV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_282b8 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccMJxzuw.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccpcxOmV.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_14652] ==> ignore
+    arg [cmTC_282b8] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../..]
-    arg [CMakeFiles/cmTC_14652.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_282b8.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -153,17 +153,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1d5ff/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1d5ff.dir/build.make CMakeFiles/cmTC_1d5ff.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_1d5ff.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c11 -o CMakeFiles/cmTC_1d5ff.dir/feature_tests.c.o   -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.c
-Linking C executable cmTC_1d5ff
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d5ff.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_1d5ff.dir/feature_tests.c.o  -o cmTC_1d5ff -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_0447f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0447f.dir/build.make CMakeFiles/cmTC_0447f.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_0447f.dir/feature_tests.c.o
+/usr/bin/gcc    -std=c11 -o CMakeFiles/cmTC_0447f.dir/feature_tests.c.o   -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0447f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0447f.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_0447f.dir/feature_tests.c.o  -o cmTC_0447f -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -173,17 +173,17 @@ make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_eb265/fast"
-/usr/bin/make -f CMakeFiles/cmTC_eb265.dir/build.make CMakeFiles/cmTC_eb265.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_eb265.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c99 -o CMakeFiles/cmTC_eb265.dir/feature_tests.c.o   -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.c
-Linking C executable cmTC_eb265
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb265.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_eb265.dir/feature_tests.c.o  -o cmTC_eb265 -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_b55bb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b55bb.dir/build.make CMakeFiles/cmTC_b55bb.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_b55bb.dir/feature_tests.c.o
+/usr/bin/gcc    -std=c99 -o CMakeFiles/cmTC_b55bb.dir/feature_tests.c.o   -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b55bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b55bb.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_b55bb.dir/feature_tests.c.o  -o cmTC_b55bb -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -193,17 +193,17 @@ make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7cfc2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7cfc2.dir/build.make CMakeFiles/cmTC_7cfc2.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_7cfc2.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c90 -o CMakeFiles/cmTC_7cfc2.dir/feature_tests.c.o   -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7cfc2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cfc2.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_7cfc2.dir/feature_tests.c.o  -o cmTC_7cfc2 -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_b7bf1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7bf1.dir/build.make CMakeFiles/cmTC_b7bf1.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_b7bf1.dir/feature_tests.c.o
+/usr/bin/gcc    -std=c90 -o CMakeFiles/cmTC_b7bf1.dir/feature_tests.c.o   -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b7bf1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7bf1.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_b7bf1.dir/feature_tests.c.o  -o cmTC_b7bf1 -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -211,30 +211,30 @@ make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_10034/fast"
-/usr/bin/make -f CMakeFiles/cmTC_10034.dir/build.make CMakeFiles/cmTC_10034.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_10034.dir/testCXXCompiler.cxx.o
-/usr/bin/g++      -o CMakeFiles/cmTC_10034.dir/testCXXCompiler.cxx.o -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_10034
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10034.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_10034.dir/testCXXCompiler.cxx.o  -o cmTC_10034 -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_432c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_432c3.dir/build.make CMakeFiles/cmTC_432c3.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_432c3.dir/testCXXCompiler.cxx.o
+/usr/bin/g++      -o CMakeFiles/cmTC_432c3.dir/testCXXCompiler.cxx.o -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_432c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_432c3.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_432c3.dir/testCXXCompiler.cxx.o  -o cmTC_432c3 -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ca256/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ca256.dir/build.make CMakeFiles/cmTC_ca256.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++      -o CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_ca256
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca256.dir/link.txt --verbose=1
-/usr/bin/g++       -v CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ca256 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_7c5ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7c5ef.dir/build.make CMakeFiles/cmTC_7c5ef.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++      -o CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_7c5ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c5ef.dir/link.txt --verbose=1
+/usr/bin/g++       -v CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7c5ef -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper
@@ -244,24 +244,24 @@ Thread model: posix
 gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca256' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9weeH7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ca256 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca256' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c5ef' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfJT15q.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7c5ef /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c5ef' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_ca256/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_ca256.dir/build.make CMakeFiles/cmTC_ca256.dir/build]
-  ignore line: [make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »]
-  ignore line: [Building CXX object CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++      -o CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_ca256]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca256.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++       -v CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ca256 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7c5ef/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7c5ef.dir/build.make CMakeFiles/cmTC_7c5ef.dir/build]
+  ignore line: [make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »]
+  ignore line: [Building CXX object CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++      -o CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_7c5ef]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c5ef.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++       -v CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7c5ef -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper]
@@ -271,13 +271,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca256' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9weeH7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ca256 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c5ef' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfJT15q.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7c5ef /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc9weeH7.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccfJT15q.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_ca256] ==> ignore
+    arg [cmTC_7c5ef] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../..]
-    arg [CMakeFiles/cmTC_ca256.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_7c5ef.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,17 +336,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_74bfe/fast"
-/usr/bin/make -f CMakeFiles/cmTC_74bfe.dir/build.make CMakeFiles/cmTC_74bfe.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_74bfe.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++14 -o CMakeFiles/cmTC_74bfe.dir/feature_tests.cxx.o -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_74bfe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74bfe.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_74bfe.dir/feature_tests.cxx.o  -o cmTC_74bfe -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_4565b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4565b.dir/build.make CMakeFiles/cmTC_4565b.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_4565b.dir/feature_tests.cxx.o
+/usr/bin/g++     -std=c++14 -o CMakeFiles/cmTC_4565b.dir/feature_tests.cxx.o -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4565b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4565b.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_4565b.dir/feature_tests.cxx.o  -o cmTC_4565b -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -409,17 +409,17 @@ make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3179c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3179c.dir/build.make CMakeFiles/cmTC_3179c.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_3179c.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++11 -o CMakeFiles/cmTC_3179c.dir/feature_tests.cxx.o -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_3179c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3179c.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_3179c.dir/feature_tests.cxx.o  -o cmTC_3179c -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_896b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_896b1.dir/build.make CMakeFiles/cmTC_896b1.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_896b1.dir/feature_tests.cxx.o
+/usr/bin/g++     -std=c++11 -o CMakeFiles/cmTC_896b1.dir/feature_tests.cxx.o -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_896b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_896b1.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_896b1.dir/feature_tests.cxx.o  -o cmTC_896b1 -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -482,17 +482,17 @@ make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
+Change Dir: /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_43a85/fast"
-/usr/bin/make -f CMakeFiles/cmTC_43a85.dir/build.make CMakeFiles/cmTC_43a85.dir/build
-make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_43a85.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++98 -o CMakeFiles/cmTC_43a85.dir/feature_tests.cxx.o -c /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_43a85
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43a85.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_43a85.dir/feature_tests.cxx.o  -o cmTC_43a85 -rdynamic 
-make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/Mod3D/INF443/vcl/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_72765/fast"
+/usr/bin/make -f CMakeFiles/cmTC_72765.dir/build.make CMakeFiles/cmTC_72765.dir/build
+make[1] : on entre dans le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_72765.dir/feature_tests.cxx.o
+/usr/bin/g++     -std=c++98 -o CMakeFiles/cmTC_72765.dir/feature_tests.cxx.o -c /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_72765
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72765.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_72765.dir/feature_tests.cxx.o  -o cmTC_72765 -rdynamic 
+make[1] : on quitte le répertoire « /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/build-cmake-Desktop-Défaut/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
