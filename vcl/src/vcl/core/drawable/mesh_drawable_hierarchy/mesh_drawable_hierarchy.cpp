@@ -44,6 +44,26 @@ const vcl::mesh_drawable& mesh_drawable_hierarchy::mesh_visual(const std::string
 {
     return visual.at(index_of_element(name));
 }
+vcl::vec3& mesh_drawable_hierarchy::set_translation_global(const std::string& name)
+{
+    return translation_global[index_of_element(name)];
+}
+vcl::mat3& mesh_drawable_hierarchy::set_rotation_global(const std::string& name)
+{
+    return rotation_global[index_of_element(name)];
+}
+const vcl::vec3& mesh_drawable_hierarchy::get_translation_global(const std::string& name) const
+{
+    return translation_global.at(index_of_element(name));
+}
+const vcl::mat3& mesh_drawable_hierarchy::get_rotation_global(const std::string& name) const
+{
+    return rotation_global.at(index_of_element(name));
+}
+// const vcl::vec3& mesh_drawable_hierarchy::get_normale(const std::string& name) const
+// {
+//     return normales[index_of_element(name)];
+// }
 
 
 
@@ -76,17 +96,34 @@ void mesh_drawable_hierarchy::update_hierarchy()
     assert(N>=0);
     translation_global[0] = translation_local[0];
     rotation_global[0] = rotation_local[0];
+    // vec3 uz = {0,0,1};
+    // normales.clear();
+    // normales.resize(N);
+    // normales[0]=(rotation_global[0]*uz);
     for(int k=1; k<N; ++k)
     {
         const int parent_id = name_map[parent_name[k]];
         rotation_global[k] = rotation_global[parent_id] * rotation_local[k];
         translation_global[k] = scaling * rotation_global[parent_id] * translation_local[k] + translation_global[parent_id];
+        // normales[k]=rotation_global[k]*uz;
     }
 }
 
 void mesh_drawable_hierarchy::draw(GLuint shader, const vcl::camera_scene& camera)
 {
     update_hierarchy();
+    size_t N = visual.size();
+    for(size_t k=0; k<N; ++k)
+    {
+        vcl::mesh_drawable& m = visual[k];
+        m.uniform_parameter.translation = translation_global[k];
+        m.uniform_parameter.rotation = rotation_global[k];
+        m.uniform_parameter.scaling = scaling;
+        m.draw(shader, camera);
+    }
+}
+void mesh_drawable_hierarchy::simple_draw(GLuint shader, const vcl::camera_scene& camera)
+{
     size_t N = visual.size();
     for(size_t k=0; k<N; ++k)
     {

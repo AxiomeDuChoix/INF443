@@ -11,7 +11,7 @@ namespace vcl
 {
 
 /** High level OpenGL drawable structure.
- * mesh_drawable contains a mesh_gpu (VAO, VBO), and a set of uniform parameter */
+ * mesh_drawable contains a mesh_gpu (VAO, VBO), and a set of uniform parameters */
 struct mesh_drawable
 {
 public:

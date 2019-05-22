@@ -12,7 +12,8 @@ using namespace vcl;
 std::default_random_engine generator;
 std::uniform_real_distribution<float> distrib(0.0,1.0);
 
-
+vec3 gradient_du_terrain(float u, float v);
+float evaluate_terrain_z_sans_bruit(float u, float v);
 float evaluate_terrain_z(float u, float v);
 vec3 evaluate_terrain(float u, float v);
 mesh create_terrain();
@@ -47,7 +48,8 @@ void scene_exercise::setup_data(std::map<std::string,GLuint>& , scene_structure&
     scene.camera.scale = 10.0f;
     scene.camera.apply_rotation(0,0,0,1.2f);
 
-    terrain = create_terrain();
+    terrain_mesh = create_terrain();
+    terrain = terrain_mesh;
     terrain.uniform_parameter.color = vec3{1.0f, 1.0f, 1.0f};
     terrain.uniform_parameter.shading.specular = 0;
     texture_terrain = texture_gpu(image_load_png("data/grass.png"));
@@ -96,6 +98,9 @@ void scene_exercise::setup_data(std::map<std::string,GLuint>& , scene_structure&
 
     segment_drawer.init();
 
+    drawable_trajectory = curve_dynamic_drawable(100); // number of steps stroed in the trajectory
+    drawable_trajectory.uniform_parameter.color = {0,0,1};
+
 
 }
 
@@ -127,9 +132,6 @@ void scene_exercise::frame_draw(std::map<std::string,GLuint>& shaders, scene_str
 
     display_centipede(shaders, scene);
     display_trajectory(shaders,scene);
-
-
-
 
 }
 
@@ -254,8 +256,6 @@ void scene_exercise::display_grass(std::map<std::string,GLuint>& shaders, scene_
             billboard_surface.draw(shaders["wireframe"], scene.camera);
         }
     }
-
-
 }
 
 void scene_exercise::display_flower(std::map<std::string,GLuint>& shaders, scene_structure& scene)
@@ -318,10 +318,15 @@ void scene_exercise::display_centipede(std::map<std::string,GLuint>& shaders, sc
 {
     const float t = timer.t;
     const vec3 p = cardinal_spline_interpolation(trajectory, t);
+    if (gui_scene.trajectory){
+        drawable_trajectory.add_point(p);
+        drawable_trajectory.draw(shaders["curve"],scene.camera);
+    }
     const vec3 d = normalize(cardinal_spline_derivative_interpolation(trajectory, t));
 
 
     mat3 R = rotation_between_vector_mat3({1,0,0},d);
+    mat3 inv;
 
     // up vector
     const vec3 up = {0,0,1};
@@ -331,39 +336,50 @@ void scene_exercise::display_centipede(std::map<std::string,GLuint>& shaders, sc
     const mat3 twist = rotation_between_vector_mat3(new_up,up_proj);
     R = twist*R;
 
-    // const float theta = std::cos(7*3.14f*timer.t);
-
     std::string abdo = "abdomen", string_patte = "patte";
 
-    // hierarchy.translation("head") = {0,0,0.2f*(1+std::sin(2*3.14f*t))};
     centipede.draw(shaders["mesh"], scene.camera);
     if(gui_scene.wireframe)
         centipede.draw(shaders["wireframe"], scene.camera);
-    for(int i = 0; i<10;i++){
-        centipede.rotation(abdo+std::to_string(i+1))= rotation_from_axis_angle_mat3({0,1,0},std::sin(2*3.1415f*(t-0.4f)+i*3.1415/4)/7);
-    }
     for (int k = 0; k<10;k++){
         centipede.rotation(string_patte+"gauche"+std::to_string(k+1)+","+std::to_string(1))= rotation_from_axis_angle_mat3({0,1,0},-std::sin(20*3.1415f*(t-0.4f)))*rotation_from_axis_angle_mat3({0,0,1},3.1415f/3)*rotation_from_axis_angle_mat3({0,1,0},3.1415f/2);
         centipede.rotation(string_patte+"droite"+std::to_string(k+1)+","+std::to_string(1))= rotation_from_axis_angle_mat3({0,1,0},-std::sin(20*3.1415f*(t-0.4f)+3.1415f/2))*rotation_from_axis_angle_mat3({0,0,1},-3.1415f/3)*rotation_from_axis_angle_mat3({0,1,0},3.1415f/2);
-
     }
     for (int k = 0; k<10;k++){
         for(int i = 1; i<10;i++){
             centipede.rotation(string_patte+"gauche"+std::to_string(k+1)+","+std::to_string(i+1))= rotation_from_axis_angle_mat3({0,1,0},3.1415f/40);
             centipede.rotation(string_patte+"droite"+std::to_string(k+1)+","+std::to_string(i+1))= rotation_from_axis_angle_mat3({0,1,0},-3.1415f/40);
-
         }
     }
-    // centipede.rotation("head") = rotation_from_axis_angle_mat3({0,1,0}, std::cos(2.0f*3.14f*timer.t)/5.0f);
-    // centipede.rotation("wingL") = rotation_from_axis_angle_mat3({0,1,0}, theta/3.0f) * rotation_from_axis_angle_mat3({1,0,0}, theta);
-    // centipede.rotation("wingL_extremity") = rotation_from_axis_angle_mat3({1,0,0}, theta);
-    // centipede.rotation("wingR") = rotation_from_axis_angle_mat3({0,1,0}, theta/3.0f) * rotation_from_axis_angle_mat3({1,0,0}, -theta);
-    // centipede.rotation("wingR_extremity") = rotation_from_axis_angle_mat3({1,0,0}, -theta);
 
+    vec3 grad_prev, grad, translation_global;
     centipede.translation("head") = p;
-    centipede.rotation("head") = rotation_from_axis_angle_mat3(cross(d,new_up),-3.1415f/2)*rotation_from_axis_angle_mat3({0,0,1},3.1415f/2)*R;
+    grad_prev = gradient_du_terrain((p.x)/20+0.5f,(p.y)/20+0.5f);
+    centipede.rotation("head") =rotation_between_vector_mat3(up,grad_prev)*rotation_from_axis_angle_mat3(cross(d,up_proj),-3.1415f/2)*rotation_from_axis_angle_mat3({0,0,1},3.1415f/2)*R;
+    
+    // vec3 normal, local_up = vec3(0,1,0);
+    // cylindre de débogage
+    // mesh_drawable cylinder;
+
+    for (int i = 0; i<10; i++){
+        translation_global = centipede.get_translation_global(abdo+std::to_string(i+1));
+        grad = gradient_du_terrain((translation_global.x)/20+0.5f,(translation_global.y)/20+0.5f);
+        // normale au (i+1-ième abdomen) normal = centipede.get_rotation_global(abdo+std::to_string(i+1))*local_up;
+        // (i+1)-ième cylindre de débogage: 
+        // cylinder = create_cylinder(0.01,norm(grad));
+        // cylinder.uniform_parameter.translation=translation_global;
+        // cylinder.uniform_parameter.rotation = rotation_between_vector_mat3(up,grad); //rotation_between_vector_mat3(normal,grad)*
+        // cylinder.uniform_parameter.color = vec3(0,1,0);
+        // cylinder.draw(shaders["mesh"],scene.camera);
+        if (det(centipede.get_rotation_global(abdo+std::to_string(i+1)))>1e-5){
+            inv = inverse(centipede.get_rotation_global(abdo+std::to_string(i+1)));
+        }
+        centipede.rotation(abdo+std::to_string(i+1))=rotation_from_axis_angle_mat3({0,1,0},std::sin(2*3.1415f*(t-0.4f)+i*3.1415/4)/7)*rotation_between_vector_mat3(inv*grad_prev,inv*grad);
+        grad_prev = grad;
+    }
     centipede.draw(shaders["mesh"], scene.camera);
 }
+
 
 void scene_exercise::display_trajectory(std::map<std::string,GLuint>& shaders, scene_structure& scene)
 {
@@ -392,8 +408,47 @@ void scene_exercise::display_trajectory(std::map<std::string,GLuint>& shaders, s
     }
 
 }
+vec3 gradient_du_terrain(float u, float v){
+    // float dfdx, dfdy;
+    // dfdx =dfdy = 0.0f;
+    // const std::vector<vec2> pi = {{0,0}, {0.5f,0.5f}, {0.2f,0.7f}, {0.8f,0.7f}};
+    // const std::vector<float> hi = {3.0f, 1.5f, 1.0f, 2.0f};
+    // const std::vector<float> sigma_i = {0.5f, 0.15f, 0.2f, 0.2f};
+    // const size_t N = pi.size();
+    // for(size_t k=0; k<N; ++k)
+    // {
+    //     const float u0 = pi[k].x;
+    //     const float v0 = pi[k].y;
+    //     const float d2 = (u-u0)*(u-u0)+(v-v0)*(v-v0);
+    //     dfdx += -(2*(u-u0))*hi[k] * std::exp( - d2/sigma_i[k]/sigma_i[k] )/sigma_i[k]*sigma_i[k];
+    //     dfdy += -(2*(v-v0))*hi[k] * std::exp( - d2/sigma_i[k]/sigma_i[k] )/sigma_i[k]*sigma_i[k];
+    // }
+    float h = 0.01f;
+    float fuv = evaluate_terrain_z_sans_bruit(u,v);
+    float dfdx = (evaluate_terrain_z_sans_bruit(u+h,v)-fuv)/h;
+    float dfdy = (evaluate_terrain_z_sans_bruit(u,v+h)-fuv)/h;
 
+    vec3 dir1 = {1.0f,0.0f,dfdx/20};
+    vec3 dir2 = {0.0f,1.0f,dfdy/20};
+    return (20*cross(dir1,dir2));
+}
 
+float evaluate_terrain_z_sans_bruit(float u, float v){
+    const std::vector<vec2> pi = {{0,0}, {0.5f,0.5f}, {0.2f,0.7f}, {0.8f,0.7f}};
+    const std::vector<float> hi = {3.0f, 1.5f, 1.0f, 2.0f};
+    const std::vector<float> sigma_i = {0.5f, 0.15f, 0.2f, 0.2f};
+    const size_t N = pi.size();
+    float z = 0.0f;
+    for(size_t k=0; k<N; ++k)
+    {
+        const float u0 = pi[k].x;
+        const float v0 = pi[k].y;
+        const float d2 = (u-u0)*(u-u0)+(v-v0)*(v-v0);
+        z += hi[k] * std::exp( - d2/sigma_i[k]/sigma_i[k] );
+    }
+
+    return z;
+}
 
 float evaluate_terrain_z(float u, float v)
 {
@@ -421,7 +476,7 @@ vec3 evaluate_terrain(float u, float v)
 {
     const float x = 20*(u-0.5f);
     const float y = 20*(v-0.5f);
-    const float z = evaluate_terrain_z(u,v);
+    const float z = evaluate_terrain_z_sans_bruit(u,v);
 
     return {x,y,z};
 }
@@ -476,8 +531,6 @@ mesh create_terrain()
 
     return terrain;
 }
-
-
 
 mesh create_cylinder(float radius, float height)
 {
@@ -584,8 +637,6 @@ mesh patte(float r, float l){
     m.push_back(pot9);
     return m;
 }
-
-
 
 mesh create_cone(float radius, float height, float z_offset)
 {
@@ -757,15 +808,29 @@ vcl::mesh create_skybox()
     return skybox;
 
 }
-
+int nearest_integer(float x){
+    if (std::abs(std::floor(x)-x)<std::abs(std::ceil(x)-x)){
+        return (int) std::floor(x);
+    }
+    return (int) std::ceil(x);
+}
 void scene_exercise::update_trajectory()
 {
+    float x, y, u, v;
+    int ku, kv;
+    const size_t Nterrain = 600;
     const size_t N = 12;
-    const float r = 3.0f;
+    const float r = 1.0f;
+    vec3 offset = {0.0f,0.0f,0.05f};
     for(size_t k=0; k<N; ++k)
     {
-        const float u = k%(N-3)/(N-3.0f);
-        const vec3 p = {r*std::cos(2*3.14f*u),r*std::sin(2*3.14f*u), 3+0.2f*std::cos(4*3.14f*u)};
+        const float theta = k%(N-3)/(N-3.0f);
+        x=r*std::cos(2*3.14f*theta), y = r*std::sin(2*3.14f*theta);
+        u = x/20 +0.5f;
+        v = y/20 + 0.5f;
+        ku = nearest_integer(u*(Nterrain-1.0f));
+        kv = nearest_integer(v*(Nterrain-1.0f));
+        const vec3 p = terrain_mesh.position[ku*Nterrain+kv]+offset;
         trajectory.position.push_back(p);
     }
 
@@ -779,7 +844,6 @@ void scene_exercise::update_time_trajectory()
 
     const size_t N = trajectory.position.size();
     trajectory.time.resize(N);
-
     float length = 0.0f;
     for(size_t k=0; k<N-1; ++k)
     {
@@ -802,8 +866,6 @@ void scene_exercise::update_time_trajectory()
 
     timer.t_min = trajectory.time[1];
     timer.t_max = trajectory.time[trajectory.time.size()-2];
-
-
 }
 
 mesh_drawable_hierarchy create_centipede()
@@ -1063,8 +1125,6 @@ void scene_exercise::mouse_move(scene_structure& scene, GLFWwindow* window)
 
     }
 }
-
-
 void scene_exercise::set_gui()
 {
 

@@ -24,7 +24,6 @@ public:
                      const vcl::vec3& translation_local = vcl::vec3(0,0,0),
                      const vcl::mat3& rotation_local    = vcl::mat3::identity());
 
-
     float scaling = 1.0f;
 
     int index_of_element(const std::string& name_to_find) const;
@@ -37,13 +36,18 @@ public:
     const vcl::mesh_drawable& mesh_visual(const std::string& name) const;
 
 
-
+    vcl::vec3& set_translation_global(const std::string& name);
+    vcl::mat3& set_rotation_global(const std::string& name);
+    const vcl::vec3& get_translation_global(const std::string& name) const;
+    const vcl::mat3& get_rotation_global(const std::string& name) const;
+   // const vcl::vec3& get_normale(const std::string& name) const;
 
 
 
     void update_hierarchy();
 
     void draw(GLuint shader, const vcl::camera_scene& camera);
+    void simple_draw(GLuint shader, const vcl::camera_scene& camera);
 
 private:
 
@@ -52,6 +56,8 @@ private:
     std::vector<std::string> parent_name;
 
     std::vector<vcl::mesh_drawable> visual;
+
+    // std::vector<vec3> normales; // Ajout Guévarien,  qui s'accompagne d'une modification ad hoc de update_hierarchy()
 
     std::vector<vcl::vec3> translation_local;
     std::vector<vcl::mat3> rotation_local;

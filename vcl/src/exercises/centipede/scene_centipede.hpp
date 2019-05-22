@@ -7,17 +7,31 @@
 // Stores some parameters that can be set from the GUI
 struct gui_scene_structure
 {
+    // bool wireframe = false;
+    // bool texture   = true;
+
+    // bool terrain   = true;
+    // bool wireframe_terrain = false;
+    // bool texture_terrain   = true;
+
+    // bool tree     = true;
+    // bool mushroom = true;
+    // bool flower   = true;
+    // bool grass    = true;
+
+    // bool skybox = false;
+    // bool trajectory = false;
     bool wireframe = false;
-    bool texture   = true;
+    bool texture   = false;
 
     bool terrain   = true;
     bool wireframe_terrain = false;
-    bool texture_terrain   = true;
+    bool texture_terrain   = false;
 
-    bool tree     = true;
-    bool mushroom = true;
-    bool flower   = true;
-    bool grass    = true;
+    bool tree     = false;
+    bool mushroom = false;
+    bool flower   = false;
+    bool grass    = false;
 
     bool skybox = false;
     bool trajectory = false;
@@ -55,6 +69,7 @@ struct scene_exercise : base_scene_exercise
 
     // visual representation of a surface
     vcl::mesh_drawable terrain;
+    vcl::mesh terrain_mesh;
     GLuint texture_terrain;
     void display_terrain(std::map<std::string,GLuint>& shaders, scene_structure& scene);
 
@@ -93,6 +108,8 @@ struct scene_exercise : base_scene_exercise
     void update_time_trajectory();
     void display_trajectory(std::map<std::string,GLuint>& shaders, scene_structure& scene);
     int picked_object;
+    vcl::curve_dynamic_drawable drawable_trajectory;                // Draw the trajectory of the moving point as a curve
+
 
     vcl::mesh_drawable_hierarchy centipede;
     vcl::segment_drawable_immediate_mode segment_drawer;
