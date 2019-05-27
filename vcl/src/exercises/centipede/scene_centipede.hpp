@@ -125,5 +125,3 @@ struct scene_exercise : base_scene_exercise
 };
 
 #endif
-
-

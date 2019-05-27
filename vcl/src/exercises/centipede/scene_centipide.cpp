@@ -1,4 +1,3 @@
-
 #include "scene_centipede.hpp"
 
 #include <random>
@@ -351,8 +350,8 @@ void scene_exercise::display_centipede(std::map<std::string,GLuint>& shaders, sc
             centipede.rotation(string_patte+"droite"+std::to_string(k+1)+","+std::to_string(i+1))= rotation_from_axis_angle_mat3({0,1,0},-3.1415f/40);
         }
     }
-
-    vec3 grad_prev, grad, translation_global;
+    mat3 supermatrice;
+    vec3 grad_prev, grad, translation_global, d2, newpoint;
     centipede.translation("head") = p;
     grad_prev = gradient_du_terrain((p.x)/20+0.5f,(p.y)/20+0.5f);
     centipede.rotation("head") =rotation_between_vector_mat3(up,grad_prev)*rotation_from_axis_angle_mat3(cross(d,up_proj),-3.1415f/2)*rotation_from_axis_angle_mat3({0,0,1},3.1415f/2)*R;
@@ -360,21 +359,39 @@ void scene_exercise::display_centipede(std::map<std::string,GLuint>& shaders, sc
     // vec3 normal, local_up = vec3(0,1,0);
     // cylindre de débogage
     // mesh_drawable cylinder;
+    float time = t-0.46f/norm(cardinal_spline_derivative_interpolation(trajectory, t));
+    if (time<timer.t_min){
+        time+= timer.t_max-timer.t_min;
+    }
+    newpoint = cardinal_spline_interpolation(trajectory, time);
+    d2 = normalize(cardinal_spline_derivative_interpolation(trajectory, time));
+    float signe = 1;
+    if( norm(d-d2)<1e-4f )
+        supermatrice= mat3::identity();
+    else{
+        const float prod = dot(d,d2);
+        const float det = dot(cross(d,d2),up);
+        signe = (det<0)? -1 : 1;
+        const float angle = std::acos(prod);
+        supermatrice = rotation_from_axis_angle_mat3(vec3(0,1,0),signe*angle/10);
+    }
+
 
     for (int i = 0; i<10; i++){
         translation_global = centipede.get_translation_global(abdo+std::to_string(i+1));
         grad = gradient_du_terrain((translation_global.x)/20+0.5f,(translation_global.y)/20+0.5f);
         // normale au (i+1-ième abdomen) normal = centipede.get_rotation_global(abdo+std::to_string(i+1))*local_up;
         // (i+1)-ième cylindre de débogage: 
-        // cylinder = create_cylinder(0.01,norm(grad));
-        // cylinder.uniform_parameter.translation=translation_global;
-        // cylinder.uniform_parameter.rotation = rotation_between_vector_mat3(up,grad); //rotation_between_vector_mat3(normal,grad)*
+        // cylinder = create_cylinder(0.01,norm(d2));
+        // cylinder.uniform_parameter.translation=newpoint;
+        // cylinder.uniform_parameter.rotation = rotation_between_vector_mat3(up,d2); //rotation_between_vector_mat3(normal,grad)*
         // cylinder.uniform_parameter.color = vec3(0,1,0);
         // cylinder.draw(shaders["mesh"],scene.camera);
         if (det(centipede.get_rotation_global(abdo+std::to_string(i+1)))>1e-5){
             inv = inverse(centipede.get_rotation_global(abdo+std::to_string(i+1)));
         }
-        centipede.rotation(abdo+std::to_string(i+1))=rotation_from_axis_angle_mat3({0,1,0},std::sin(2*3.1415f*(t-0.4f)+i*3.1415/4)/7)*rotation_between_vector_mat3(inv*grad_prev,inv*grad);
+        centipede.rotation(abdo+std::to_string(i+1))=/*rotation_from_axis_angle_mat3({0,1,0},-signe*std::sin(3.1415f*(t-0.4f)+i*3.1415/4)/10)*/supermatrice*rotation_between_vector_mat3(inv*grad_prev,inv*grad);
+        // centipede.rotation(abdo+std::to_string(i+1))=rotation_from_axis_angle_mat3({0,1,0},std::sin(2*3.1415f*(t-0.4f)+i*3.1415/4)/7)*rotation_between_vector_mat3(inv*grad_prev,inv*grad);
         grad_prev = grad;
     }
     centipede.draw(shaders["mesh"], scene.camera);
@@ -513,8 +530,8 @@ mesh create_terrain()
 
     // Generate triangle organization
     //  Parametric surface with uniform grid sampling: generate 2 triangles for each grid cell
-	const unsigned int Ns = N;
-	assert(Ns >= 2);
+    const unsigned int Ns = N;
+    assert(Ns >= 2);
     for(unsigned int ku=0; ku<Ns-1; ++ku)
     {
         for(unsigned int kv=0; kv<Ns-1; ++kv)
@@ -544,7 +561,7 @@ mesh create_cylinder(float radius, float height)
         m.position.push_back( p+vec3(0,0,height) );
     }
 
-	const unsigned int Ns = N;
+    const unsigned int Ns = N;
     for(unsigned int k=0; k<Ns; ++k)
     {
         const unsigned int u00 = 2*k;
@@ -1147,4 +1164,3 @@ void scene_exercise::set_gui()
 }
 
 #endif
-
