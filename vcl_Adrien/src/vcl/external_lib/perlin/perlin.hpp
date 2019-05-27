@@ -7,5 +7,5 @@ namespace  vcl {
 float perlin(float x, int octave=5, float persistency=0.3f, float frequency_gain=2.0f);
 float perlin(float x, float y, int octave=5, float persistency=0.3f, float frequency_gain=2.0f);
 float perlin(float x, float y, float z, int octave=5, float persistency=0.3f, float frequency_gain=2.0f);
-
+float perlinf(float x, float y, int octave=5, float persistency=0.3f, float frequency_gain=2.0f,float frequency=1.0f);
 }

@@ -717,6 +717,114 @@ home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.
 	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.cpp.s
 .PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.cpp.s
 
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.o: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.o
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.o
+
+# target to build an object file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.o
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.o
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.i: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.i
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.i
+
+# target to preprocess a source file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.i
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.i
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.s: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.s
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.s
+
+# target to generate assembly for a file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.s
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp.s
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.o: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.o
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.o
+
+# target to build an object file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.o
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.o
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.i: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.i
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.i
+
+# target to preprocess a source file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.i
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.i
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.s: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.s
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.s
+
+# target to generate assembly for a file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.s
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.cpp.s
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.o: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.o
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.o
+
+# target to build an object file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.o
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.o
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.i: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.i
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.i
+
+# target to preprocess a source file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.i
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.i
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.s: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.s
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.s
+
+# target to generate assembly for a file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.s
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.cpp.s
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.o: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.o
+
+# target to build an object file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.i: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.i
+
+# target to preprocess a source file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i
+
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.s: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s
+
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.s
+
+# target to generate assembly for a file
+home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s
+.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s
+
 home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.o: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.cpp.o
 
 .PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.o
@@ -2007,6 +2115,18 @@ help:
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.o"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.i"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.s"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.o"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.i"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.s"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.o"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.i"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.s"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.o"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.i"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.s"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.o"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.i"
+	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.s"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.o"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.i"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.s"

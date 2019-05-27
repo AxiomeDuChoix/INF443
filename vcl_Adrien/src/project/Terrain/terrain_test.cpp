@@ -12,8 +12,8 @@ using namespace vcl;
     It is used to initialize all part-specific data */
 void scene_project::setup_data(std::map<std::string,GLuint>& , scene_structure& scene, gui_structure& )
 {
+    terrain.init_drawable();
     // Create visual terrain surface
-    terrain_drawable=terrain.terrain;
     // Setup initial camera mode and position
     scene.camera.camera_type = camera_control_spherical_coordinates;
     scene.camera.scale = 10.0f;
@@ -34,10 +34,11 @@ void scene_project::frame_draw(std::map<std::string,GLuint>& shaders, scene_stru
     // Display terrain
     glPolygonOffset( 1.0, 1.0 );
 //    glBindTexture(GL_TEXTURE_2D, terrain_texture_id);
-    terrain_drawable.draw(shaders["mesh"], scene.camera);
+    glBindTexture(GL_TEXTURE_2D,scene.texture_white);
+    terrain.terrain_drawable.draw(shaders["mesh"], scene.camera);
     if( gui_scene.wireframe ){ // wireframe if asked from the GUI
         glPolygonOffset( 1.0, 1.0 );
-        terrain_drawable.draw(shaders["wireframe"], scene.camera);
+        terrain.terrain_drawable.draw(shaders["wireframe"], scene.camera);
     }
     glBindTexture(GL_TEXTURE_2D,scene.texture_white);
     glDepthMask(true);
@@ -46,10 +47,8 @@ void scene_project::frame_draw(std::map<std::string,GLuint>& shaders, scene_stru
 void scene_project::update_terrain()
 {
     // Clear memory in case of pre-existing terrain
-    terrain_drawable.data_gpu.clear();
-
-    // Create visual terrain surface
-    terrain_drawable = terrain.terrain;
+    terrain.setPerlin(gui_scene.height,gui_scene.scaling,gui_scene.octave,gui_scene.persistency);
+    terrain.reload();
 }
 void scene_project::set_gui()
 {

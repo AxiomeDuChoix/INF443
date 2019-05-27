@@ -9,7 +9,7 @@ struct gui_scene_structure
 {
     bool wireframe;
 
-    float height = 0.2f;
+    float height = 0.01f;
     float scaling = 3.0f;
     int octave = 9;
     float persistency = 0.7f;
@@ -34,7 +34,7 @@ struct scene_project : base_scene_project
 
     // visual representation of a surface
     Terrain terrain;
-    vcl::mesh_drawable terrain_drawable;
+//    vcl::mesh_drawable terrain_drawable;
     gui_scene_structure gui_scene;
     void update_terrain();
 };
