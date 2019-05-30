@@ -16,3 +16,5 @@
 #include "04_simulation/example_mass_spring.hpp"
 #include "centipede/centipede.hpp"
 #include "centipede/scene_centipede.hpp"
+#include "centipede/scene_centipede2.hpp"
+#include "centipede/centipedeclass.hpp"
