@@ -9,10 +9,21 @@ struct gui_scene_structure
 {
     bool wireframe;
 
-    float height = 0.01f;
-    float scaling = 3.0f;
-    int octave = 9;
-    float persistency = 0.7f;
+
+    float heightm = 0.2f;
+    float scalingm = 0.50f;
+    int octavem = 9;
+    float persistencym = 0.4f;
+    //Terrain
+    float heightt = 0.07f;
+    float scalingt = 0.40f;
+    int octavet = 9;
+    float persistencyt = 0.55f;
+    //Cote
+    float heightc = 0.8f;
+    float scalingc = 7.0f;
+    int octavec = 9;
+    float persistencyc = 0.55f;
 };
 
 struct scene_project : base_scene_project

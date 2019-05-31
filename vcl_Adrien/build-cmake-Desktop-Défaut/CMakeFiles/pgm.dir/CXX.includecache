@@ -612,6 +612,28 @@ map
 vector
 -
 
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/exercises.hpp
+base_exercise/base_exercise.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/base_exercise/base_exercise.hpp
+00_introduction/00_introduction.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/00_introduction/00_introduction.hpp
+01_modelisation/01_modelisation.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/01_modelisation/01_modelisation.hpp
+02_texture/example_texture.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/02_texture/example_texture.hpp
+02_texture/example_perlin.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/02_texture/example_perlin.hpp
+02_texture/example_billboard.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/02_texture/example_billboard.hpp
+03_animation/example_animated_hierarchy.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/03_animation/example_animated_hierarchy.hpp
+03_animation/example_interpolation.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/03_animation/example_interpolation.hpp
+04_simulation/example_sphere_gravity.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/04_simulation/example_sphere_gravity.hpp
+04_simulation/example_mass_spring.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/04_simulation/example_mass_spring.hpp
+
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/helper_scene.cpp
 helper_scene.hpp
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/helper_scene.hpp
@@ -629,10 +651,18 @@ vcl/vcl.hpp
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/vcl/vcl.hpp
 helper_scene.hpp
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/helper_scene.hpp
+exercises/exercises.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/exercises/exercises.hpp
+vcl/vcl.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/vcl/vcl.hpp
+helper_scene.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/helper_scene.hpp
 project/project.hpp
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/project.hpp
 
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.cpp
+
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_project.cpp
 
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp
 centipede.hpp
@@ -663,6 +693,24 @@ bits/stdc++.h
 -
 ../base_project/base_project.hpp
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/base_project/base_project.hpp
+
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau.cpp
+eau.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau.hpp
+
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau.hpp
+../../project/base_project/base_project.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/base_project/base_project.hpp
+
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.cpp
+eau_test.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.hpp
+
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.hpp
+../../project/base_project/base_project.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/base_project/base_project.hpp
+eau.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau.hpp
 
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp
 
@@ -739,6 +787,8 @@ Faune/centipede/centipede.hpp
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.hpp
 Faune/centipede/scene_centipede.hpp
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/scene_centipede.hpp
+Terrain/eau_test.hpp
+/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.hpp
 
 /home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project_current.hpp
 

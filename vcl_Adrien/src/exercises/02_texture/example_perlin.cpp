@@ -66,7 +66,7 @@ void scene_exercise::frame_draw(std::map<std::string,GLuint>& shaders, scene_str
 mesh create_grid(const gui_scene_structure& gui_scene)
 {
     // Number of samples of the terrain is N x N
-    const size_t N = 600;
+    const size_t N = 100;
 
     mesh terrain; // temporary terrain storage (CPU only)
     terrain.position.resize(N*N);
@@ -92,8 +92,8 @@ mesh create_grid(const gui_scene_structure& gui_scene)
             const float noise = perlin(scaling*u, scaling*v, octave, persistency);
 
             // 3D vertex coordinates
-            const float x = 10*(u-0.5f);
-            const float y = 10*(v-0.5f);
+            const float x = 1*(u-0.5f);
+            const float y = 1*(v-0.5f);
             const float z = height*noise;
 
             const float c = 0.3f+0.7f*noise;
@@ -101,7 +101,8 @@ mesh create_grid(const gui_scene_structure& gui_scene)
             // Compute coordinates
             terrain.position[kv+N*ku] = {x,y,z};
 
-            terrain.color[kv+N*ku]  = {c,c,c,1.0f};
+//            terrain.color[kv+N*ku]  = {c,c,c,1.0f};
+            terrain.color[kv+N*ku]  = {1.0f,1.0f,1.0f,1.0f};
         }
     }
 

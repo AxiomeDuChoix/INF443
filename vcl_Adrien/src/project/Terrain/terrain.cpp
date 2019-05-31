@@ -6,9 +6,14 @@
 
 // Add vcl namespace within the current one - Allows to use function from vcl library without explicitely preceeding their name with vcl::
 using namespace vcl;
+float pi=std::acos(-1);
 //USEFUL FONCTIONS
 vec2 to2(vec3 v){
     return vec2(v[0],v[1]);
+}
+float theta(vec2 v){
+    if(norm(v)<1e-6)return 0;
+    return std::acos(v[0]/norm(v))+pi*(v[1]<0);
 }
 
 vec2 projete_ortho(vec2 v, vec2 a){
@@ -39,65 +44,72 @@ Terrain::Terrain()
     color_plaine=Color(colors_plaine,poids_plaine,randcolor);
     color_marais=Color(colors_marais,poids_marais,randcolor);
     color_plage=Color(colors_plage,poids_plage,randcolor);
+    init_collines();
+    init_cote_fractale();
     init_terrain();
 }
 
-Terrain::Terrain(float _l,float _l_ile,float _h_montagne,int _n_collines,float _h_colline,int _n_geysers,int _n_crevasses,int _n_mares)
-{
-    l=_l;
-    l_ile=_l_ile;
-    h_montagne=_h_montagne;
-    n_collines=_n_collines;
-    h_colline=_h_colline;
-    n_geysers=_n_geysers;
-    n_crevasses=_n_crevasses;
-    n_mares=_n_mares;
-    tr1={-0.5f*1.732f*l_ile,-0.5f*l_ile,0};
-    tr2={0.5f*1.732f*l_ile,-0.5f*l_ile,0};
-    tr3={0.0f,l_ile,0.0f};
-    pas12=tr2-tr1;
-    pas13=tr3-tr1;
-    pas23=tr3-tr2;
-    centre1=to2(tr1)*l_montagne/l_ile;
-    centre2=to2(tr2)*l_montagne/l_ile;
-    centre3=to2(tr3)*l_montagne/l_ile;
-    color_foret=Color(colors_foret,poids_foret,randcolor);
-    color_montagne=Color(colors_montagne,poids_montagne,randcolor);
-    color_plaine=Color(colors_plaine,poids_plaine,randcolor);
-    color_marais=Color(colors_marais,poids_marais,randcolor);
-    color_plage=Color(colors_plage,poids_plage,randcolor);
-    init_terrain();
-
+void Terrain::init_collines(){
+    collines.resize(n_collines);
+    std::default_random_engine generator;
+    generator.seed(time(NULL));
+    std::uniform_real_distribution<float> d_angle(0.0f,2*pi);
+    std::uniform_real_distribution<float> d_h(-alea_h_colline/2,alea_h_colline/2);
+    std::uniform_real_distribution<float> d_l(-alea_l_colline/2,alea_l_colline/2);
+    for(int i=0;i<n_collines;i++){
+        float r,alpha,h,l;
+        alpha=d_angle(generator);
+        std::uniform_real_distribution<float> d_rayon(l_montagne,l_ile/2*(1+std::abs(std::cos((alpha-pi/2)*3.0f/2)))-l_bord-2*l_plage-l_colline);
+        r=d_rayon(generator);
+        h=d_h(generator);
+        l=d_l(generator);
+        collines[i]={r*std::cos(alpha),r*std::sin(alpha),h_colline+h,l_colline+l};
+    }
 }
+
+void Terrain::init_cote_fractale(){
+    cote_fractale.resize(maillage_angle);
+    float pas=1.0f/(maillage_angle-1);
+    float perlin_m=0.0f,mult=persistencyc;
+    for(int i=0;i<octavec;i++){
+        perlin_m+=mult;
+        mult*=persistencyc;
+    }
+    for(int i=0;i<maillage_angle;i++){
+        cote_fractale[i]=heightc*(perlin(scalingc*i*pas,octavec,persistencyc,4.0f)-perlin_m/2);
+    }
+}
+
 void Terrain::init_terrain(){
     terrain.connectivity.clear();
     terrain.position.resize(nb_points*(nb_points+1)/2);
     terrain.color.resize(nb_points*(nb_points+1)/2);
     srand(time(NULL));
     std::default_random_engine generator;
+    generator.seed(time(NULL));
     std::uniform_real_distribution<float> distribution(0.0,alea_montagne);
     float facteur=1.0f/(nb_points-1);
+    float m_perlint=0.0f,mult=persistencyt;
+    for(int i=0;i<octavet;i++){m_perlint+=mult;mult*=persistencyt;}
     for(size_t x=0;x<nb_points;x++){
         for(size_t y=0;y<=x;y++){
             vec3 pos=tr3-x*pas13*facteur+y*pas12*facteur;
             terrain.color[x*(x+1)/2+y]=colorxy(pos[0],pos[1]);
             terrain.position[x*(x+1)/2+y]=pos;
-            terrain.position[x*(x+1)/2+y]+={0,0,evaluate_z(pos[0],pos[1])};
+            terrain.position[x*(x+1)/2+y]+={0,0,evaluate_z(pos[0],pos[1])+heightt*(perlin(scalingt*pos[0],scalingt*pos[1],octavet,persistencyt)-m_perlint)};
             float dmin=std::min(norm(to2(pos)-centre1),std::min(norm(to2(pos)-centre2),norm(to2(pos)-centre3)));
             dmin-=distribution(generator);
             float di=dist_bord(pos[0],pos[1]);
             if(dmin<l_montagne){
-                float zplus=0;
-                for(int i=0;i<perlin_it;i++){
-                    zplus+=(1/(1<<i))*perlin(l_montagne*pos[0]*(1<<i),l_montagne*pos[1]*(1<<i),octave,persistency);
-                }
-                terrain.position[x*(x+1)/2+y]+={0,0,(l_montagne-dmin)/l_montagne*zplus};
+                float zplus=perlin(scalingm*pos[0],scalingm*pos[1],octavem,persistencym);
+                terrain.position[x*(x+1)/2+y]+={0,0,((l_montagne-dmin)/l_montagne)*((l_montagne-dmin)/l_montagne)*zplus*heightm};
                 terrain.color[x*(x+1)/2+y]=color_montagne.rdcolor();
             }
-//            else if (di>0.8f*l_bord&&di<l_bord*1.2f){
-//                float fac=(di)/l_bord*l_ile/nb_points;
-//                terrain.position[x*(x+1)/2+y]+={fac*(2*(rand()%2)-1)*perlin(scaling*pos[0],octave,persistency),fac*(2*(rand()%2)-1)*perlin(scaling*pos[1],octave,persistency),0};
-//            }
+            if(di<l_bord+2*l_plage){
+                float angle=theta(to2(pos));
+                int k=(int)(maillage_angle*angle/(2*pi));
+                terrain.position[x*(x+1)/2+y]+=pos*((l_bord+2*l_plage-di)/(l_bord+2*l_plage)*cote_fractale[k]*(std::abs(std::sin((angle-pi/2)*3.0f/2.0f))+0.1f));
+            }
 
         }
     }
@@ -107,7 +119,7 @@ void Terrain::init_terrain(){
             const index3 triangle_1={rang+y,rang+x+1+y,rang+x+2+y};
             terrain.connectivity.push_back(triangle_1);
             if(x!=y){
-                const index3 triangle_2={rang+y,rang+1+y,rang+x+2+y};
+                const index3 triangle_2={rang+y,rang+x+2+y,rang+1+y};
                 terrain.connectivity.push_back(triangle_2);
             }
         }
@@ -115,25 +127,32 @@ void Terrain::init_terrain(){
 }
 void Terrain::init_drawable(){
     terrain_drawable=terrain;
-//    terrain_drawable.uniform_parameter.shading.specular=0.0f;
-//    terrain_drawable.uniform_parameter.shading.ambiant=0.0f;
-//    terrain_drawable.uniform_parameter.shading.diffuse=0.0f;
+    terrain_drawable.uniform_parameter.shading.specular=specular;
+    terrain_drawable.uniform_parameter.shading.ambiant=ambiant;
+    terrain_drawable.uniform_parameter.shading.diffuse=diffuse;
 }
-void Terrain::setPerlin(float height_,float scaling_,int octave_,float persistency_,int sensibilite_noise_cote_){
-    height=height_;
-    scaling=scaling_;
-    octave=octave_;
-    persistency=persistency_;
-    sensibilite_noise_cote=sensibilite_noise_cote_;
+void Terrain::setPerlinMontagne(float height_,float scaling_,int octave_,float persistency_){
+    heightm=height_;
+    scalingm=scaling_;
+    octavem=octave_;
+    persistencym=persistency_;
 }
-void Terrain::setPerlin(float height_,float scaling_,int octave_,float persistency_){
-    height=height_;
-    scaling=scaling_;
-    octave=octave_;
-    persistency=persistency_;
+void Terrain::setPerlinTerrain(float height_,float scaling_,int octave_,float persistency_){
+    heightt=height_;
+    scalingt=scaling_;
+    octavet=octave_;
+    persistencyt=persistency_;
+}
+void Terrain::setPerlinCote(float height_,float scaling_,int octave_,float persistency_){
+    heightc=height_;
+    scalingc=scaling_;
+    octavec=octave_;
+    persistencyc=persistency_;
 }
 void Terrain::reload(){
     terrain_drawable.data_gpu.clear();
+    init_cote_fractale();
+    init_collines();
     init_terrain();
     init_drawable();
 }
@@ -144,7 +163,10 @@ float Terrain::evaluate_z(float x, float y){
     if(di<=l_bord){
         z-=profondeur_bord*(std::exp(-courbure_bord*di*di/(l_bord*l_bord))-std::exp(-courbure_bord));
     }
-
+    for(int i=0;i<n_collines;i++){
+        float d=norm(v-vec2(collines[i][0],collines[i][1]))/collines[i][3];
+        z+=std::exp(-d*d)*collines[i][2]*(d<2.0f);
+    }
     const float d1=norm(v-centre1)/l_montagne;
     const float d2=norm(v-centre2)/l_montagne;
     const float d3=norm(v-centre3)/l_montagne;

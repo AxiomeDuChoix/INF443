@@ -6,3 +6,4 @@
 #include "Terrain/terrain_test.hpp"
 #include "Faune/centipede/centipede.hpp"
 #include "Faune/centipede/scene_centipede.hpp"
+#include "Terrain/eau_test.hpp"

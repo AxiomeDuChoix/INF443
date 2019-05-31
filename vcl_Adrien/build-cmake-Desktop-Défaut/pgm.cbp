@@ -255,6 +255,9 @@
 		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_exercises.cpp">
 			<Option target="pgm"/>
 		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/main_project.cpp">
+			<Option target="pgm"/>
+		</Unit>
 		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Faune/centipede/centipede.cpp">
 			<Option target="pgm"/>
 		</Unit>
@@ -271,6 +274,18 @@
 			<Option target="pgm"/>
 		</Unit>
 		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/color.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.hpp">
 			<Option target="pgm"/>
 		</Unit>
 		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp">

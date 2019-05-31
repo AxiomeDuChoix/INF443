@@ -47,7 +47,10 @@ void scene_project::frame_draw(std::map<std::string,GLuint>& shaders, scene_stru
 void scene_project::update_terrain()
 {
     // Clear memory in case of pre-existing terrain
-    terrain.setPerlin(gui_scene.height,gui_scene.scaling,gui_scene.octave,gui_scene.persistency);
+
+    terrain.setPerlinMontagne(gui_scene.heightm,gui_scene.scalingm,gui_scene.octavem,gui_scene.persistencym);
+    terrain.setPerlinTerrain(gui_scene.heightt,gui_scene.scalingt,gui_scene.octavet,gui_scene.persistencyt);
+    terrain.setPerlinCote(gui_scene.heightc,gui_scene.scalingc,gui_scene.octavec,gui_scene.persistencyc);
     terrain.reload();
 }
 void scene_project::set_gui()
@@ -55,25 +58,66 @@ void scene_project::set_gui()
     ImGui::Checkbox("Wireframe", &gui_scene.wireframe);
     ImGui::Separator();
     ImGui::Text("Perlin parameters");
-
-    float height_min = 0.1f;
-    float height_max = 2.0f;
-    if( ImGui::SliderScalar("Height", ImGuiDataType_Float, &gui_scene.height, &height_min, &height_max) )
+    //Montagne
+    float height_minm = 0.1f;
+    float height_maxm = 2.0f;
+    if( ImGui::SliderScalar("Height Montagne", ImGuiDataType_Float, &gui_scene.heightm, &height_minm, &height_maxm) )
         update_terrain();
 
-    float scaling_min = 0.1f;
-    float scaling_max = 10.0f;
-    if( ImGui::SliderScalar("(u,v) Scaling", ImGuiDataType_Float, &gui_scene.scaling, &scaling_min, &scaling_max) )
+    float scaling_minm = 0.1f;
+    float scaling_maxm = 10.0f;
+    if( ImGui::SliderScalar("(u,v) Scaling Montagne", ImGuiDataType_Float, &gui_scene.scalingm, &scaling_minm, &scaling_maxm) )
         update_terrain();
 
-    int octave_min = 1;
-    int octave_max = 10;
-    if( ImGui::SliderScalar("Octave", ImGuiDataType_S32, &gui_scene.octave, &octave_min, &octave_max) )
+    int octave_minm = 1;
+    int octave_maxm = 15;
+    if( ImGui::SliderScalar("Octave Montagne", ImGuiDataType_S32, &gui_scene.octavem, &octave_minm, &octave_maxm) )
         update_terrain();
 
-    float persistency_min = 0.1f;
-    float persistency_max = 0.9f;
-    if( ImGui::SliderScalar("Persistency", ImGuiDataType_Float, &gui_scene.persistency, &persistency_min, &persistency_max) )
+    float persistency_minm = 0.1f;
+    float persistency_maxm = 0.9f;
+    if( ImGui::SliderScalar("Persistency Montagne", ImGuiDataType_Float, &gui_scene.persistencym, &persistency_minm, &persistency_maxm) )
+        update_terrain();
+    //Terrain
+    float height_mint = 0.05f;
+    float height_maxt = 1.0f;
+    if( ImGui::SliderScalar("Height Terrain", ImGuiDataType_Float, &gui_scene.heightt, &height_mint, &height_maxt) )
+        update_terrain();
+
+    float scaling_mint = 0.1f;
+    float scaling_maxt = 10.0f;
+    if( ImGui::SliderScalar("(u,v) Scaling Terrain", ImGuiDataType_Float, &gui_scene.scalingt, &scaling_mint, &scaling_maxt) )
+        update_terrain();
+
+    int octave_mint = 1;
+    int octave_maxt = 15;
+    if( ImGui::SliderScalar("Octave Terrain", ImGuiDataType_S32, &gui_scene.octavet, &octave_mint, &octave_maxt) )
+        update_terrain();
+
+    float persistency_mint = 0.1f;
+    float persistency_maxt = 0.9f;
+    if( ImGui::SliderScalar("Persistency Terrain", ImGuiDataType_Float, &gui_scene.persistencyt, &persistency_mint, &persistency_maxt) )
+        update_terrain();
+
+    //Cote
+    float height_minc = 0.05f;
+    float height_maxc = 1.0f;
+    if( ImGui::SliderScalar("Height Cote", ImGuiDataType_Float, &gui_scene.heightc, &height_minc, &height_maxc) )
+        update_terrain();
+
+    float scaling_minc = 0.1f;
+    float scaling_maxc = 10.0f;
+    if( ImGui::SliderScalar("(u,v) Scaling Cote", ImGuiDataType_Float, &gui_scene.scalingc, &scaling_minc, &scaling_maxc) )
+        update_terrain();
+
+    int octave_minc = 1;
+    int octave_maxc = 15;
+    if( ImGui::SliderScalar("Octave Cote", ImGuiDataType_S32, &gui_scene.octavec, &octave_minc, &octave_maxc) )
+        update_terrain();
+
+    float persistency_minc = 0.1f;
+    float persistency_maxc = 0.9f;
+    if( ImGui::SliderScalar("Persistency Cote", ImGuiDataType_Float, &gui_scene.persistencyc, &persistency_minc, &persistency_maxc) )
         update_terrain();
 }
 

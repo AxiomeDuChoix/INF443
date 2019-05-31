@@ -31,20 +31,7 @@ float perlin(float x, float y, int octave, float persistency, float frequency_ga
     }
     return value;
 }
-float perlinf(float x, float y, int octave, float persistency, float frequency_gain,float frequency)
-{
-    float value = 0.0f;
-    float a = 1.0f; // current magnitude
-    float f = frequency; // current frequency
-    for(int k=0;k<octave;k++)
-    {
-        const float n = static_cast<float>(snoise2(x*f, y*f));
-        value += a*(0.5f+0.5f*n );
-        f *= frequency_gain;
-        a *= persistency;
-    }
-    return value;
-}
+
 float perlin(float x, float y, float z, int octave, float persistency, float frequency_gain)
 {
     float value = 0.0f;
