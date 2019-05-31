@@ -39,7 +39,6 @@ Centipede::Centipede(float _scaling, float _r_head, float _r_eyes,
     angle_pattes = _angle_pattes;
     centipede = create_centipede();
 }
-
 mesh Centipede::section_cone(float radius1, float radius2, float height, float offset){
     mesh m;
     //number of samples
@@ -133,6 +132,7 @@ mesh_drawable_hierarchy Centipede::create_centipede(){
         hierarchy.add_element(abdomen,abdo+std::to_string(n_abdomen/2+i+1),parent,{0.0f,0.0f,-l_tot});
         parent = abdo+std::to_string(n_abdomen/2+i+1);
     }
+    l_tot_abdomen = l_tot;
     // pattes à gauche:
     std::string string_patte = "patte";
     float rayon_abdomen_local;

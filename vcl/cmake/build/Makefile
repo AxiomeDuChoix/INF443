@@ -663,6 +663,33 @@ home/francisco/Documents/INF443/vcl/src/exercises/03_animation/test.cpp.s:
 	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/03_animation/test.cpp.s
 .PHONY : home/francisco/Documents/INF443/vcl/src/exercises/03_animation/test.cpp.s
 
+home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.o: home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.o
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.o
+
+# target to build an object file
+home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.o
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.o
+
+home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.i: home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.i
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.i
+
+# target to preprocess a source file
+home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.i
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.i
+
+home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.s: home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.s
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.s
+
+# target to generate assembly for a file
+home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.s
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp.s
+
 home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.o: home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.cpp.o
 
 .PHONY : home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.o
@@ -771,6 +798,33 @@ home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup.cpp.s:
 	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup.cpp.s
 .PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup.cpp.s
 
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.o: home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.o
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.o
+
+# target to build an object file
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.o
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.o
+
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.i: home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.i
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.i
+
+# target to preprocess a source file
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.i
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.i
+
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.s: home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.s
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.s
+
+# target to generate assembly for a file
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.s
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp.s
+
 home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.o: home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.cpp.o
 
 .PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.o
@@ -824,6 +878,33 @@ home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.s: ho
 home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.cpp.s:
 	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.cpp.s
 .PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.cpp.s
+
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.o: home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.o
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.o
+
+# target to build an object file
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.o
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.o
+
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.i: home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.i
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.i
+
+# target to preprocess a source file
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.i
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.i
+
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.s: home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.s
+
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.s
+
+# target to generate assembly for a file
+home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.s
+.PHONY : home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp.s
 
 home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede2.o: home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede2.cpp.o
 
@@ -2109,6 +2190,9 @@ help:
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/03_animation/test.o"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/03_animation/test.i"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/03_animation/test.s"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.o"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.i"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.s"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.o"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.i"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.s"
@@ -2121,12 +2205,18 @@ help:
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup.o"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup.i"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup.s"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.o"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.i"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.s"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.o"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.i"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.s"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.o"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.i"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.s"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.o"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.i"
+	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.s"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede2.o"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede2.i"
 	@echo "... home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede2.s"

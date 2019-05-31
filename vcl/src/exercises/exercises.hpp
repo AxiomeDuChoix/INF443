@@ -14,6 +14,7 @@
 #include "03_animation/example_interpolation.hpp"
 #include "04_simulation/example_sphere_gravity.hpp"
 #include "04_simulation/example_mass_spring.hpp"
+#include "04_simulation/boids.hpp"
 #include "centipede/centipede.hpp"
 #include "centipede/scene_centipede.hpp"
 #include "centipede/scene_centipede2.hpp"

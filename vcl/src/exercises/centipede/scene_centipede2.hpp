@@ -58,6 +58,7 @@ struct scene_exercise : base_scene_exercise
 
     vcl::mesh_drawable_hierarchy centipede;
     void display_centipede(vcl::mesh_drawable_hierarchy* hiera, std::map<std::string,GLuint>& shaders, scene_structure& scene);
+    void display_centipede(Centipede* centi, std::map<std::string,GLuint>& shaders, scene_structure& scene);
 
     gui_scene_structure gui_scene;
 

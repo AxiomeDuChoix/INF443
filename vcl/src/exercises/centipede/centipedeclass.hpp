@@ -15,6 +15,7 @@ struct Centipede{
     int n_sections_abdomen;
     float r_abdomen; 
     float l_abdo;
+    float l_tot_abdomen;
     // pattes:
     int n_sous_pattes;
     int n_sections_pattes;

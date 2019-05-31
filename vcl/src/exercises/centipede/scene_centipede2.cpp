@@ -79,9 +79,6 @@ void scene_exercise::frame_draw(std::map<std::string,GLuint>& shaders, scene_str
     // test.draw(shaders["mesh"], scene.camera);
 
     // testhierarchy->centipede.draw(shaders["mesh"], scene.camera);
-
-
-
 }
 void scene_exercise::display_centipede(mesh_drawable_hierarchy* hiera, std::map<std::string,GLuint>& shaders, scene_structure& scene)
 {
@@ -122,7 +119,6 @@ void scene_exercise::display_centipede(mesh_drawable_hierarchy* hiera, std::map<
             hiera->rotation(string_patte+"droite"+std::to_string(k+1)+","+std::to_string(i+1))= rotation_from_axis_angle_mat3({0,1,0},-3.1415f/40);
         }
     }
-    mat3 supermatrice;
     vec3 grad_prev, grad, translation_global, d2, newpoint;
     hiera->translation("head") = p;
     grad_prev = gradient_du_terrain((p.x)/20+0.5f,(p.y)/20+0.5f);
@@ -191,6 +187,93 @@ void scene_exercise::display_centipede(mesh_drawable_hierarchy* hiera, std::map<
         dprev = d2;
     }
 }
+void scene_exercise::display_centipede(Centipede* centi, std::map<std::string,GLuint>& shaders, scene_structure& scene)
+{
+    const float t = timer.t;
+    const vec3 p = cardinal_spline_interpolation(trajectory, t);
+    if (gui_scene.trajectory){
+        drawable_trajectory.add_point(p);
+        drawable_trajectory.draw(shaders["curve"],scene.camera);
+    }
+    const vec3 d = normalize(cardinal_spline_derivative_interpolation(trajectory, t));
+    vec3 dprev = d;
+
+
+    mat3 R = rotation_between_vector_mat3({1,0,0},d);
+    mat3 inv;
+
+    // up vector
+    const vec3 up = {0,0,1};
+    const vec3 up_proj = up-dot(up,d)*d;
+    const vec3 new_up = R*vec3{0,0,1};
+
+    const mat3 twist = rotation_between_vector_mat3(new_up,up_proj);
+    R = twist*R;
+
+    std::string abdo = "abdomen", string_patte = "patte";
+
+    centi->centipede.draw(shaders["mesh"], scene.camera);
+    // centi->centipede.update_hierarchy();
+    if(gui_scene.wireframe)
+        centi->centipede.draw(shaders["wireframe"], scene.camera);
+    for (int k = 0; k<centi->n_abdomen;k++){
+        centi->centipede.rotation(string_patte+"gauche"+std::to_string(k+1)+","+std::to_string(1))= rotation_from_axis_angle_mat3({0,1,0},-std::sin(20*3.1415f*(t-0.4f)))*rotation_from_axis_angle_mat3({0,0,1},3.1415f/3)*rotation_from_axis_angle_mat3({0,1,0},3.1415f/2);
+        centi->centipede.rotation(string_patte+"droite"+std::to_string(k+1)+","+std::to_string(1))= rotation_from_axis_angle_mat3({0,1,0},-std::sin(20*3.1415f*(t-0.4f)+3.1415f/2))*rotation_from_axis_angle_mat3({0,0,1},-3.1415f/3)*rotation_from_axis_angle_mat3({0,1,0},3.1415f/2);
+    }
+    for (int k = 0; k<centi->n_abdomen;k++){
+        for(int i = 1; i<centi->n_sous_pattes;i++){
+            centi->centipede.rotation(string_patte+"gauche"+std::to_string(k+1)+","+std::to_string(i+1))= rotation_from_axis_angle_mat3({0,1,0},3.1415f/40);
+            centi->centipede.rotation(string_patte+"droite"+std::to_string(k+1)+","+std::to_string(i+1))= rotation_from_axis_angle_mat3({0,1,0},-3.1415f/40);
+        }
+    }
+    vec3 grad_prev, grad, translation_global, d2, newpoint;
+    centi->centipede.translation("head") = p;
+    grad_prev = gradient_du_terrain((p.x)/20+0.5f,(p.y)/20+0.5f);
+    centi->centipede.rotation("head") = rotation_between_vector_mat3(up,grad_prev)*rotation_from_axis_angle_mat3(cross(d,up_proj),-3.1415f/2)*rotation_from_axis_angle_mat3({0,0,1},3.1415f/2)*R;
+
+    float time = t;
+    // mesh_drawable cylinder, cylinder2; 
+    // vec3 v3;
+    for (int i = 0; i<centi->n_abdomen; i++){
+        translation_global = centi->centipede.get_translation_global(abdo+std::to_string(i+1));
+        grad = gradient_du_terrain((translation_global.x)/20+0.5f,(translation_global.y)/20+0.5f);
+        // normale au (i+1-ième abdomen) normal = centi->centipede.get_rotation_global(abdo+std::to_string(i+1))*local_up;
+        // (i+1)-ième cylindre de débogage: 
+        // cylinder = create_cylinder(0.01,norm(d2));
+        // cylinder.uniform_parameter.translation=newpoint;
+        // cylinder.uniform_parameter.rotation = rotation_between_vector_mat3(up,d2); //rotation_between_vector_mat3(normal,grad)*
+        // cylinder.uniform_parameter.color = vec3(0,1,0);
+        // cylinder.draw(shaders["mesh"],scene.camera);
+        if (det(centi->centipede.get_rotation_global(abdo+std::to_string(i+1)))>1e-5){
+            inv = inverse(centi->centipede.get_rotation_global(abdo+std::to_string(i+1)));
+        }
+        time = time-centi->scaling*centi->l_tot_abdomen/norm(cardinal_spline_derivative_interpolation(trajectory, time));
+        d2 = cardinal_spline_derivative_interpolation(trajectory, time);
+        if (time<timer.t_min){
+            time+= timer.t_max-timer.t_min;
+        }
+        // éventuellement utile pour la démo: 
+
+        // cylinder = create_cylinder(0.01,norm(d2));
+        // cylinder.uniform_parameter.translation=translation_global;
+        // cylinder.uniform_parameter.rotation = rotation_between_vector_mat3(up,inv*d2); //rotation_between_vector_mat3(normal,grad)*
+        // cylinder.uniform_parameter.color = vec3(0,1,0);
+        // cylinder.draw(shaders["mesh"],scene.camera);
+
+        // cylinder2 = create_cylinder(0.01,norm(d2));
+        // cylinder2.uniform_parameter.translation=translation_global;
+        // v3 = centi->centipede.get_rotation_global(abdo+std::to_string(i+1))*up;
+        // cylinder2.uniform_parameter.rotation = rotation_between_vector_mat3(up,v3); //rotation_between_vector_mat3(normal,grad)*
+        // cylinder2.uniform_parameter.color = vec3(0,0,1);
+        // cylinder2.draw(shaders["mesh"],scene.camera);
+        centi->centipede.rotation(abdo+std::to_string(i+1))= rotation_between_vector_mat3(inv*dprev,inv*d2)*rotation_between_vector_mat3(inv*grad_prev,inv*grad);
+        // std::cout<<rotation_between_vector_mat3(v3,d2)<<std::endl;
+        // centi->centipede.rotation(abdo+std::to_string(i+1))=/*rotation_from_axis_angle_mat3({0,1,0},-signe*std::sin(3.1415f*(t-0.4f)+i*3.1415/4)/10)*/supermatrice*rotation_between_vector_mat3(inv*grad_prev,inv*grad);
+        // centi->centipede.rotation(abdo+std::to_string(i+1))=rotation_from_axis_angle_mat3({0,1,0},std::sin(2*3.1415f*(t-0.4f)+i*3.1415/4)/7)*rotation_between_vector_mat3(inv*grad_prev,inv*grad);
+        grad_prev = grad;
+        dprev = d2;
+    }
+}
 void scene_exercise::display_trajectory(std::map<std::string,GLuint>& shaders, scene_structure& scene)
 {
     if(gui_scene.trajectory)
@@ -227,7 +310,6 @@ vec3 gradient_du_terrain(float u, float v){
     vec3 dir2 = {0.0f,1.0f,dfdy/20};
     return (20*cross(dir1,dir2));
 }
-
 float evaluate_terrain_z_sans_bruit(float u, float v){
     const std::vector<vec2> pi = {{0,0}, {0.5f,0.5f}, {0.2f,0.7f}, {0.8f,0.7f}};
     const std::vector<float> hi = {3.0f, 1.5f, 1.0f, 2.0f};
@@ -350,7 +432,6 @@ mesh create_cylinder(float radius, float height)
 
     return m;
 }
-
 mesh create_pot(float radius1, float radius2, float height, float offset){
 
     mesh m;

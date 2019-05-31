@@ -610,6 +610,16 @@ test.hpp
 ../../exercises/base_exercise/base_exercise.hpp
 /home/francisco/Documents/INF443/vcl/src/exercises/base_exercise/base_exercise.hpp
 
+/home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.cpp
+boids.hpp
+/home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.hpp
+random
+-
+
+/home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.hpp
+../../exercises/base_exercise/base_exercise.hpp
+/home/francisco/Documents/INF443/vcl/src/exercises/base_exercise/base_exercise.hpp
+
 /home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.cpp
 example_mass_spring.hpp
 /home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.hpp
@@ -652,6 +662,12 @@ scene_centipede.hpp
 random
 -
 
+/home/francisco/Documents/INF443/vcl/src/exercises/centipede/backup2.cpp
+scene_centipede2.hpp
+/home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede2.hpp
+random
+-
+
 /home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.cpp
 centipede.hpp
 /home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.hpp
@@ -675,6 +691,12 @@ time.h
 /home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipedeclass.hpp
 ../../exercises/base_exercise/base_exercise.hpp
 /home/francisco/Documents/INF443/vcl/src/exercises/base_exercise/base_exercise.hpp
+
+/home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.cpp
+scene_centipede.hpp
+/home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.hpp
+random
+-
 
 /home/francisco/Documents/INF443/vcl/src/exercises/centipede/scene_centipede.hpp
 ../../exercises/base_exercise/base_exercise.hpp
@@ -727,6 +749,8 @@ base_exercise/base_exercise.hpp
 /home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_sphere_gravity.hpp
 04_simulation/example_mass_spring.hpp
 /home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/example_mass_spring.hpp
+04_simulation/boids.hpp
+/home/francisco/Documents/INF443/vcl/src/exercises/04_simulation/boids.hpp
 centipede/centipede.hpp
 /home/francisco/Documents/INF443/vcl/src/exercises/centipede/centipede.hpp
 centipede/scene_centipede.hpp
