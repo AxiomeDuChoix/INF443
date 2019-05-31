@@ -92,6 +92,7 @@ void scene_exercise::setup_data(std::map<std::string,GLuint>& , scene_structure&
     timer.t_min = trajectory.time[1];
     timer.t_max = trajectory.time[trajectory.time.size()-2];
     sphere_trajectory = mesh_primitive_sphere();
+
     centipede = create_centipede();
 
 
@@ -102,9 +103,6 @@ void scene_exercise::setup_data(std::map<std::string,GLuint>& , scene_structure&
 
 
 }
-
-
-
 
 /** This function is called at each frame of the animation loop.
     It is used to compute time-varying argument and perform data data drawing */
@@ -359,7 +357,8 @@ void scene_exercise::display_centipede(std::map<std::string,GLuint>& shaders, sc
     // vec3 normal, local_up = vec3(0,1,0);
     // cylindre de débogage
     // mesh_drawable cylinder;
-    float time = t-0.46f/norm(cardinal_spline_derivative_interpolation(trajectory, t));
+    std::cout<<norm(cardinal_spline_derivative_interpolation(trajectory, t))<<std::endl;
+    float time = t-0.23f/norm(cardinal_spline_derivative_interpolation(trajectory, t));
     if (time<timer.t_min){
         time+= timer.t_max-timer.t_min;
     }
