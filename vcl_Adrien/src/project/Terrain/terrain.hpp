@@ -6,6 +6,9 @@ struct Terrain{
     const size_t nb_points=400; //Précision du tracé
     float ambiant=1.0f,diffuse=0,specular=0;
     float l_ile=10.0f; //Taille caractéristique de l'île
+    float hauteur_eau=-0.5f;
+    float distance_eau=3.0f;
+    vcl::vec4 couleur_eau=vcl::vec4(49,92,106,255)/255.0f;
     float l_bord=1.0f; //Taille caractéristique de décroissance des bords.
     float profondeur_bord=3.0f; //Profondeur des bords
     int courbure_bord=3;
@@ -22,9 +25,6 @@ struct Terrain{
     float l_colline=0.2f;
     float alea_h_colline=0.02f;
     float alea_l_colline=0.05f;
-    int n_geysers=0;
-    int n_crevasses=0;
-    int n_mares=0;
     vcl::mesh terrain;
     vcl::mesh_drawable terrain_drawable;
 //    vcl::vec4 color_foret=vcl::vec4(159,129,57,0)*(1/255.0f);
@@ -65,7 +65,7 @@ struct Terrain{
     int octavet = 9;
     float persistencyt = 0.55f;
     //Cote
-    int maillage_angle=100;
+    int maillage_angle=1000;
     std::vector<float> cote_fractale;
     float heightc = 0.8f;
     float scalingc = 7.0f;

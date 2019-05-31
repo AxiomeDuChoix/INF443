@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="pgm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pgm">
+				<Option output="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/pgm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/cmake/../src"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 pgm"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pgm/fast">
+				<Option output="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/pgm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/cmake/../src"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 pgm/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/build-cmake-Desktop-Défaut/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/glad/include/glad/glad.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/glad/src/glad.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imconfig.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_demo.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_draw.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_impl_glfw.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_impl_glfw.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_impl_opengl3.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_impl_opengl3.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_internal.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imgui_widgets.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imstb_rectpack.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imstb_textedit.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/imgui/imstb_truetype.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/lodepng/lodepng.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/lodepng/lodepng.h">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/simplexnoise/simplexnoise1234.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/external/simplexnoise/simplexnoise1234.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/curve/shader.frag.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/curve/shader.vert.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/mesh/shader.frag.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/mesh/shader.vert.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/segment_immediate_mode/shader.frag.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/segment_immediate_mode/shader.vert.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/wireframe/shader.frag.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/wireframe/shader.geom.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/shaders/wireframe/shader.vert.glsl">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/helper_scene.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/helper_scene.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/main.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Faune/centipede/centipede.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Faune/centipede/centipede.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Faune/centipede/scene_centipede.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Faune/centipede/scene_centipede.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/color.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/color.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/eau.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/eau.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/eau_test.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/eau_test.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/terrain.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/terrain.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/terrain_exemple/terrain_exemple.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/terrain_exemple/terrain_exemple.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/terrain_test.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/Terrain/terrain_test.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/base_project/base_project.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/base_project/base_project.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/project.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/sceneFinale.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project/sceneFinale.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/project_current.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/core.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/curve_drawable/curve_drawable.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/curve_drawable/curve_drawable.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/curve_dynamic_drawable/curve_dynamic_drawable.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/curve_dynamic_drawable/curve_dynamic_drawable.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/drawable.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/drawable_uniform/drawable_uniform.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/drawable_uniform/drawable_uniform.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/mesh_drawable/mesh_drawable.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/mesh_drawable/mesh_drawable.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/mesh_drawable_hierarchy/mesh_drawable_hierarchy.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/mesh_drawable_hierarchy/mesh_drawable_hierarchy.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/segment_drawable_immediate_mode/segment_drawable_immediate_mode.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/segments_drawable/segments_drawable.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/drawable/segments_drawable/segments_drawable.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/helper/file/file.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/helper/file/file.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/helper/helper.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/helper/string/string.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/helper/string/string.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat/mat.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat2/mat2.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat2/mat2.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat3/mat3.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat3/mat3.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat4/mat4.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/mat/mat4/mat4.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/math.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/numerics/numerics.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/numerics/numerics.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/transformation/transformation.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/transformation/transformation.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec/vec.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec2/vec2.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec2/vec2.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec3/vec3.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec3/vec3.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec4/vec4.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/math/vec/vec4/vec4.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/curve_gpu/curve_gpu.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/curve_gpu/curve_gpu.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/debug/opengl_debug.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/debug/opengl_debug.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/mesh_gpu/mesh_gpu.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/mesh_gpu/mesh_gpu.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/opengl.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/segments_gpu/segments_gpu.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/segments_gpu/segments_gpu.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/shader/shader.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/shader/shader.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/texture/image/image.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/texture/image/image.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/texture/texture.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/texture/texture_gpu/texture_gpu.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/texture/texture_gpu/texture_gpu.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/uniform/uniform.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/opengl/uniform/uniform.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/camera/camera.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/camera/camera.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/camera_control_glfw/camera_control_glfw.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/camera_control_glfw/camera_control_glfw.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/picking/info/picking_info.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/picking/info/picking_info.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/picking/picking.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/picking/primitives/picking_primitives.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/picking/primitives/picking_primitives.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/picking/ray/picking_ray.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/picking/ray/picking_ray.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/scene.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/screen_motion/screen_motion.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/screen_motion/screen_motion.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/time_period/time_period.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/time_period/time_period.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/time_slider/time_slider.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/scene/time_slider/time_slider.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh_loader/mesh_loader.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh_loader/obj/obj.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh_loader/obj/obj.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh_primitive/mesh_primitive.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh_primitive/mesh_primitive.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh_structure/mesh.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/mesh/mesh_structure/mesh.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/core/shape/shape.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/external_lib.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/glfw/fps_counter/fps_counter.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/glfw/fps_counter/fps_counter.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/glfw/glfw.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/glfw/window/window.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/glfw/window/window.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/headers/glad.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/headers/glfw.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/headers/imgui.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/headers/lodepng.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/headers/simplexnoise.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/imgui/imgui.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/imgui/imgui.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/lodepng/lodepng.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/lodepng/lodepng.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/perlin/perlin.cpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/external_lib/perlin/perlin.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/src/vcl/vcl.hpp">
+			<Option target="pgm"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/cmake/../../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/cmake/../../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/cmake/../../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_final/cmake/../../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

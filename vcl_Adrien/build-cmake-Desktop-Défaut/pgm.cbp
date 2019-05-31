@@ -288,9 +288,6 @@
 		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.hpp">
 			<Option target="pgm"/>
 		</Unit>
-		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp">
-			<Option target="pgm"/>
-		</Unit>
 		<Unit filename="/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.cpp">
 			<Option target="pgm"/>
 		</Unit>

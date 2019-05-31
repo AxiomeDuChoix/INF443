@@ -2,7 +2,6 @@
 
 #include "../../project/base_project/base_project.hpp"
 
-#ifdef PROJECT_EAU
 
 // Stores some parameters that can be set from the GUI
 struct Eau{
@@ -17,6 +16,5 @@ struct Eau{
     void init_draw();
 };
 
-#endif
 
 

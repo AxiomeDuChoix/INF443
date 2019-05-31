@@ -82,8 +82,8 @@ void Terrain::init_cote_fractale(){
 
 void Terrain::init_terrain(){
     terrain.connectivity.clear();
-    terrain.position.resize(nb_points*(nb_points+1)/2);
-    terrain.color.resize(nb_points*(nb_points+1)/2);
+    terrain.position.resize(nb_points*(nb_points+1)/2+12);
+    terrain.color.resize(nb_points*(nb_points+1)/2+12);
     srand(time(NULL));
     std::default_random_engine generator;
     generator.seed(time(NULL));
@@ -124,6 +124,43 @@ void Terrain::init_terrain(){
             }
         }
     }
+    int l=terrain.position.size()-12;
+    terrain.position[l]={-distance_eau,distance_eau,hauteur_eau};
+    terrain.position[l+1]={distance_eau,distance_eau,hauteur_eau};
+    terrain.position[l+2]={distance_eau,-distance_eau,hauteur_eau};
+    terrain.position[l+3]={-distance_eau,-distance_eau,hauteur_eau};
+    terrain.position[l+4]={0,10*distance_eau,hauteur_eau};
+    terrain.position[l+5]={10*distance_eau,0,hauteur_eau};
+    terrain.position[l+6]={0,-10*distance_eau,hauteur_eau};
+    terrain.position[l+7]={-10*distance_eau,0,hauteur_eau};
+    terrain.position[l+8]={-10*distance_eau,10*distance_eau,hauteur_eau};
+    terrain.position[l+9]={10*distance_eau,10*distance_eau,hauteur_eau};
+    terrain.position[l+10]={10*distance_eau,-10*distance_eau,hauteur_eau};
+    terrain.position[l+11]={-10*distance_eau,-10*distance_eau,hauteur_eau};
+    terrain.connectivity.push_back({l+0,l+1,l+4});
+    terrain.connectivity.push_back({l+1,l+2,l+5});
+    terrain.connectivity.push_back({l+2,l+3,l+6});
+    terrain.connectivity.push_back({l+3,l+0,l+7});
+    terrain.connectivity.push_back({l+0,l+7,l+8});
+    terrain.connectivity.push_back({l+0,l+8,l+4});
+    terrain.connectivity.push_back({l+1,l+4,l+9});
+    terrain.connectivity.push_back({l+1,l+9,l+5});
+    terrain.connectivity.push_back({l+2,l+5,l+10});
+    terrain.connectivity.push_back({l+2,l+10,l+6});
+    terrain.connectivity.push_back({l+3,l+6,l+11});
+    terrain.connectivity.push_back({l+3,l+11,l+7});
+    terrain.color[l]=couleur_eau;
+    terrain.color[l+1]=couleur_eau;
+    terrain.color[l+2]=couleur_eau;
+    terrain.color[l+3]=couleur_eau;
+    terrain.color[l+4]=couleur_eau;
+    terrain.color[l+5]=couleur_eau;
+    terrain.color[l+6]=couleur_eau;
+    terrain.color[l+7]=couleur_eau;
+    terrain.color[l+8]=couleur_eau;
+    terrain.color[l+9]=couleur_eau;
+    terrain.color[l+10]=couleur_eau;
+    terrain.color[l+11]=couleur_eau;
 }
 void Terrain::init_drawable(){
     terrain_drawable=terrain;

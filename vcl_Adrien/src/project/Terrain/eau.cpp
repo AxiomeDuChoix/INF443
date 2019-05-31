@@ -2,7 +2,6 @@
 #include "eau.hpp"
 
 
-#ifdef PROJECT_EAU
 
 // Add vcl namespace within the current one - Allows to use function from vcl library without explicitely preceeding their name with vcl::
 using namespace vcl;
@@ -24,7 +23,7 @@ Eau::Eau()
                 surface_cpu.connectivity.push_back({i*N+j,(i+1)*N+j,(i+1)*N+j+1});
             }
             surface_cpu.texture_uv.push_back({pas*i,pas*j});
-            surface_cpu.normal.push_back(normalize(vec3(-std::sin(3.14159f*nperiodesx*pas*j),0.0f,1.0f)));
+            surface_cpu.normal.push_back(normalize(vec3(0.0f,-std::sin(3.14159f*nperiodesx*pas*j),1.0f)));
 //            surface_cpu.color.push_back({std::abs(std::sin(3.14159f*nperiodesx*pas*j)),std::abs(std::sin(3.14159f*nperiodesx*pas*j)),std::abs(std::sin(3.14159f*nperiodesx*pas*j)),1});
         }
     }
@@ -38,5 +37,4 @@ void Eau::init_draw(){
 }
 
 
-#endif
 

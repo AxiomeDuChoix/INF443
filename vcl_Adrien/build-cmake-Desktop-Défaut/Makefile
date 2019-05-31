@@ -879,33 +879,6 @@ home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain
 	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.cpp.s
 .PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.cpp.s
 
-home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.o: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o
-
-.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.o
-
-# target to build an object file
-home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o
-.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.o
-
-home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.i: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i
-
-.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.i
-
-# target to preprocess a source file
-home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i
-.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.i
-
-home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.s: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s
-
-.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.s
-
-# target to generate assembly for a file
-home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s
-.PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.cpp.s
-
 home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.o: home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.cpp.o
 
 .PHONY : home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.o
@@ -2214,9 +2187,6 @@ help:
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.o"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.i"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/eau_test.s"
-	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.o"
-	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.i"
-	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/fonctions.s"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.o"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.i"
 	@echo "... home/adrien/Documents/Informatique/X/Mod3D/INF443/vcl_Adrien/src/project/Terrain/terrain.s"
